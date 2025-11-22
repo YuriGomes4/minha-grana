@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Minha Grana</title>
+    <meta name="description" content="Política de Privacidade do aplicativo Minha Grana. Saiba como tratamos seus dados financeiros e pessoais.">
+    
+    <!-- Estilos CSS para uma leitura agradável -->
+    <style>
+        :root {
+            --primary-color: #2ecc71; /* Verde financeiro */
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--container-bg);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* Estilização do conteúdo Markdown convertido */
+        #content h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        #content h2 {
+            margin-top: 30px;
+            color: #2c3e50;
+        }
+
+        #content h3 {
+            color: #34495e;
+        }
+
+        #content ul {
+            padding-left: 20px;
+        }
+
+        #content li {
+            margin-bottom: 5px;
+        }
+
+        #content a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        #content a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+            padding-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 20px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+
+    <!-- Biblioteca Marked.js para converter Markdown em HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div id="content">
+            <div class="loading">Carregando política de privacidade...</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> Minha Grana. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        // Atualiza o ano no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Função para buscar e renderizar o Markdown
+        async function loadPrivacyPolicy() {
+            const contentDiv = document.getElementById('content');
+            
+            try {
+                // Busca o arquivo .md (assume que está na mesma pasta)
+                const response = await fetch('privacy-policy.md');
+                
+                if (!response.ok) {
+                    throw new Error(`Erro HTTP: ${response.status}`);
+                }
+
+                const markdownText = await response.text();
+                
+                // Converte Markdown para HTML usando a biblioteca marked
+                contentDiv.innerHTML = marked.parse(markdownText);
+                
+            } catch (error) {
+                console.error('Erro ao carregar a política:', error);
+                contentDiv.innerHTML = `
+                    <div style="color: red; text-align: center;">
+                        <h2>Erro ao carregar o documento</h2>
+                        <p>Não foi possível carregar a política de privacidade no momento.</p>
+                        <p>Detalhes: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Inicia o carregamento
+        loadPrivacyPolicy();
+    </script>
+</body>
+</html>
