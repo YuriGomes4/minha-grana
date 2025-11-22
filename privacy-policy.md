@@ -28,7 +28,7 @@ O aplicativo possui um recurso opcional de **Monitoramento de Notificações** p
 *   **Como funciona:** O aplicativo utiliza a permissão de acesso às notificações do Android para ler as notificações recebidas no seu dispositivo.
 *   **Filtragem:** O sistema processa **apenas** as notificações provenientes de aplicativos bancários e financeiros conhecidos.
 *   **Armazenamento Local e Privacidade:** As notificações processadas são salvas em um **banco de dados local** no seu dispositivo. Nós ou nossos servidores **não temos acesso** a esses dados, a menos que você opte explicitamente por enviá-los (por exemplo, ao utilizar a funcionalidade de sincronização em nuvem).
-*   **Transparência:** O funcionamento deste recurso é claro e transparente. Notificações de outros aplicativos (mensagens pessoais, redes sociais, etc.) são ignoradas imediatamente e nunca são coletadas. O processamento ocorre inteiramente no seu dispositivo.
+*   **Transparência e Consentimento:** O funcionamento deste recurso é claro e transparente. Antes de ativar este recurso, o aplicativo exibirá uma **divulgação destacada** explicando quais dados serão acessados e como serão usados, solicitando seu consentimento explícito. Notificações de outros aplicativos (mensagens pessoais, redes sociais, etc.) são ignoradas imediatamente e nunca são coletadas. O processamento ocorre inteiramente no seu dispositivo.
 
 ## 2. Uso de Inteligência Artificial (IA)
 
@@ -55,14 +55,30 @@ Não vendemos, trocamos ou transferimos suas informações pessoais para terceir
 *   **Provedores de Serviço:** Utilizamos serviços de terceiros confiáveis para operar nosso aplicativo, especificamente o **Supabase** para gerenciamento de banco de dados e autenticação. Esses terceiros têm acesso aos seus dados apenas para realizar tarefas específicas em nosso nome e são obrigados a proteger suas informações.
 *   **Obrigações Legais:** Se exigido por lei ou intimação judicial.
 
-## 6. Seus Direitos
+## 6. Retenção e Exclusão de Dados
+
+Mantemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas nesta política, a menos que um período de retenção maior seja exigido ou permitido por lei (como para fins fiscais, contábeis ou legais).
+
+### 6.1. Exclusão de Conta
+Você tem o direito de solicitar a exclusão completa da sua conta e de todos os dados associados a qualquer momento.
+
+*   **Dentro do Aplicativo:** Acesse as **Configurações > Perfil > Excluir Conta**. Esta ação é irreversível e removerá todos os seus dados dos nossos servidores imediatamente.
+*   **Fora do Aplicativo (Solicitação via Web/E-mail):** Caso não tenha mais acesso ao aplicativo, você pode solicitar a exclusão dos seus dados enviando um e-mail para **[yurialdegomes@gmail.com]** com o assunto "Exclusão de Dados". Processaremos sua solicitação em até 30 dias.
+
+Ao excluir sua conta, todos os dados de transações, categorias, metas e informações de login serão permanentemente removidos de nossos bancos de dados ativos.
+
+## 7. Privacidade Infantil
+
+Nosso Serviço não se destina a menores de 13 anos. Não coletamos intencionalmente informações de identificação pessoal de crianças. Se você é um pai ou responsável e sabe que seu filho nos forneceu dados pessoais, entre em contato conosco. Se tomarmos conhecimento de que coletamos dados de crianças sem verificação do consentimento dos pais, tomamos medidas para remover essas informações de nossos servidores.
+
+## 8. Seus Direitos (LGPD e Outras Regulações)
 
 Você tem o direito de:
 *   Acessar os dados que temos sobre você;
 *   Solicitar a correção de dados incorretos;
-*   Solicitar a exclusão completa da sua conta e de todos os dados associados a qualquer momento através das configurações do aplicativo.
+*   Revogar seu consentimento a qualquer momento (ex: desativando a leitura de notificações nas configurações do Android).
 
-## 7. Alterações Nesta Política de Privacidade
+## 9. Alterações Nesta Política de Privacidade
 
 Podemos atualizar nossa Política de Privacidade periodicamente. Recomendamos que você revise esta página periodicamente para quaisquer alterações. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página.
 
