@@ -6,84 +6,129 @@ A sua privacidade é extremamente importante para nós. Esta Política de Privac
 
 Ao utilizar o Minha Grana, você concorda com a coleta e uso de informações de acordo com esta política.
 
+## Informações do Desenvolvedor
+
+* **Desenvolvedor / Responsável:** Yuri Gomes
+* **Aplicativo:** Minha Grana
+* **E-mail de contato:** yurialdegomes@gmail.com
+* **Site público da política:** (hostear em GitHub Pages - `index.html` + `privacy-policy.md`)
+
 ## 1. Informações que Coletamos
 
 Para fornecer nossos serviços de gestão financeira, podemos coletar e processar os seguintes tipos de dados:
 
 ### 1.1. Dados de Cadastro (Login)
 Para criar uma conta e sincronizar seus dados entre dispositivos, coletamos informações como:
-*   Endereço de e-mail;
-*   Nome de usuário;
-*   Foto de perfil (opcional).
+* Endereço de e-mail;
+* Nome de usuário;
+* Foto de perfil (opcional).
 
 ### 1.2. Dados Financeiros
 O núcleo do nosso serviço envolve o processamento de:
-*   Transações financeiras (receitas e despesas);
-*   Categorias de gastos;
-*   Metas orçamentárias;
-*   Arquivos OFX importados voluntariamente pelo usuário.
+* Transações financeiras (receitas e despesas);
+* Categorias de gastos;
+* Metas orçamentárias;
+* Arquivos OFX importados voluntariamente pelo usuário.
 
 ### 1.3. Leitura de Notificações (Funcionalidade Específica)
 O aplicativo possui um recurso opcional de **Monitoramento de Notificações** para automatizar o registro de despesas.
-*   **Como funciona:** O aplicativo utiliza a permissão de acesso às notificações do Android para ler as notificações recebidas no seu dispositivo.
-*   **Filtragem:** O sistema processa **apenas** as notificações provenientes de aplicativos bancários e financeiros conhecidos.
-*   **Armazenamento Local e Privacidade:** As notificações processadas são salvas em um **banco de dados local** no seu dispositivo. Nós ou nossos servidores **não temos acesso** a esses dados, a menos que você opte explicitamente por enviá-los (por exemplo, ao utilizar a funcionalidade de sincronização em nuvem).
-*   **Transparência e Consentimento:** O funcionamento deste recurso é claro e transparente. Antes de ativar este recurso, o aplicativo exibirá uma **divulgação destacada** explicando quais dados serão acessados e como serão usados, solicitando seu consentimento explícito. Notificações de outros aplicativos (mensagens pessoais, redes sociais, etc.) são ignoradas imediatamente e nunca são coletadas. O processamento ocorre inteiramente no seu dispositivo.
+* **Como funciona:** O aplicativo utiliza a permissão de acesso às notificações do Android para ler notificações recebidas no seu dispositivo.
+* **Filtragem:** O sistema processa **apenas** as notificações provenientes de aplicativos bancários e financeiros conhecidos.
+* **Armazenamento Local e Privacidade:** As notificações processadas são salvas em um **banco de dados local** no seu dispositivo. Nós ou nossos servidores **não temos acesso** a esses dados, a menos que você opte explicitamente por enviá-los (por exemplo, ao utilizar a funcionalidade de sincronização em nuvem).
+* **Transparência e Consentimento:** Antes de ativar o recurso de monitoramento de notificações, o aplicativo exibirá uma **divulgação destacada** dentro da própria app explicando quais dados serão acessados, como serão processados e pedirá seu consentimento explícito. Esse consentimento é requerido antes de qualquer acesso ou processamento em segundo plano.
+* **Processamento em segundo plano:** O processamento de notificações pode ocorrer em segundo plano (quando o app não estiver na tela) apenas após o consentimento do usuário para ativar esse recurso. Mesmo em segundo plano, apenas notificações bancárias filtradas são processadas localmente.
 
 ## 2. Uso de Inteligência Artificial (IA)
 
-O Minha Grana utiliza recursos de Inteligência Artificial para fornecer insights, categorização automática e análises de gastos.
-*   **Como os dados são usados:** Trechos de dados de transações (como descrição e valor) podem ser processados por algoritmos de IA para sugerir categorias ou alertar sobre padrões de gastos.
-*   **Proteção:** Nos esforçamos para anonimizar os dados antes de qualquer processamento externo de IA, garantindo que sua identidade financeira permaneça protegida.
+O Minha Grana pode utilizar recursos de Inteligência Artificial para fornecer insights, categorização automática e análises de gastos.
+* **Como os dados são usados:** Trechos de dados de transações (como descrição e valor) podem ser processados por algoritmos de IA para sugerir categorias, detectar padrões ou gerar insights.
+* **Processamento externo e anonimização:** Atualmente, o aplicativo **não envia** dados financeiros identificáveis para provedores de IA sem seu consentimento. Se viermos a utilizar serviços externos de IA para melhorar funcionalidades, nos comprometemos a:
+	* Anonimizar ou agregar os dados quando possível;
+	* Divulgar claramente o nome do provedor e a finalidade antes de qualquer envio;
+	* Obter consentimento explícito do usuário, quando aplicável.
 
 ## 3. Como Usamos Suas Informações
 
 Utilizamos os dados coletados para:
-*   Fornecer e manter o serviço;
-*   Gerar gráficos e relatórios financeiros personalizados;
-*   Sincronizar suas informações na nuvem (caso esteja logado);
-*   Melhorar nossos algoritmos de categorização;
-*   Enviar notificações importantes sobre sua conta ou atualizações do app.
+* Fornecer e manter o serviço;
+* Gerar gráficos e relatórios financeiros personalizados;
+* Sincronizar suas informações na nuvem (caso você opte por ativar a sincronização);
+* Melhorar nossos algoritmos de categorização e sugestões (com dados anônimos/consentidos);
+* Enviar notificações importantes sobre sua conta ou atualizações do app.
 
-## 4. Armazenamento e Segurança
+## 4. Terceiros e Compartilhamento de Dados
 
-Valorizamos sua confiança em nos fornecer suas informações pessoais e financeiras. Utilizamos meios comercialmente aceitáveis para protegê-las, incluindo criptografia na transmissão e no armazenamento de dados sensíveis. No entanto, lembre-se que nenhum método de transmissão pela internet ou armazenamento eletrônico é 100% seguro e confiável.
+* **Provedores de serviço:** Utilizamos serviços de terceiros confiáveis para operar nosso aplicativo, especificamente o **Supabase** para gerenciamento de banco de dados (caso você ative a sincronização) e autenticação. Esses provedores têm acesso aos dados apenas para executar as tarefas contratadas e devem proteger suas informações conforme contratos e práticas de segurança.
+* **Envio opcional pelo usuário:** Nós ou nossos servidores só recebem suas notificações/processamentos locais se você optar explicitamente por enviar ou sincronizar seus dados (por exemplo, ao habilitar a sincronização em nuvem). Caso contrário, os dados permanecem apenas no seu dispositivo.
+* **Não vendemos dados:** Não vendemos, alugamos ou transferimos informações pessoais dos usuários para terceiros para consideração monetária.
+* **Exigências legais:** Podemos divulgar dados quando exigido por lei ou por uma ordem judicial válida.
 
-## 5. Compartilhamento de Dados
+## 5. Segurança dos Dados
 
-Não vendemos, trocamos ou transferimos suas informações pessoais para terceiros, exceto:
-*   **Provedores de Serviço:** Utilizamos serviços de terceiros confiáveis para operar nosso aplicativo, especificamente o **Supabase** para gerenciamento de banco de dados e autenticação. Esses terceiros têm acesso aos seus dados apenas para realizar tarefas específicas em nosso nome e são obrigados a proteger suas informações.
-*   **Obrigações Legais:** Se exigido por lei ou intimação judicial.
+Adotamos medidas comerciais razoáveis para proteger suas informações, incluindo:
+* Criptografia em trânsito (por exemplo, HTTPS/TLS) para transmissões de dados;
+* Controles de acesso e autenticação para limitar quem pode acessar os dados;
+* Procedimentos internos para gerenciamento seguro, retenção mínima e eliminação de dados.
 
-## 6. Retenção e Exclusão de Dados
+Nenhum método de transmissão ou armazenamento é 100% seguro; fazemos o possível para proteger seus dados e informar rapidamente caso haja incidentes que afetem sua privacidade.
 
-Mantemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas nesta política, a menos que um período de retenção maior seja exigido ou permitido por lei (como para fins fiscais, contábeis ou legais).
+## 6. Retenção, Exportação e Exclusão de Dados
+
+Mantemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas nesta política, a menos que um período de retenção maior seja exigido por lei.
 
 ### 6.1. Exclusão de Conta
-Você tem o direito de solicitar a exclusão completa da sua conta e de todos os dados associados a qualquer momento.
+Você pode solicitar a exclusão completa da sua conta e de todos os dados associados a qualquer momento.
+* **Dentro do Aplicativo:** Acesse **Configurações > Perfil > Excluir Conta**. Esta ação é irreversível e removerá todos os seus dados dos nossos bancos de dados ativos.
+* **Fora do Aplicativo (via E-mail):** Caso não tenha acesso ao app, solicite a exclusão enviando um e-mail para **yurialdegomes@gmail.com** com o assunto "Exclusão de Dados". Processaremos sua solicitação em até 30 dias.
 
-*   **Dentro do Aplicativo:** Acesse as **Configurações > Perfil > Excluir Conta**. Esta ação é irreversível e removerá todos os seus dados dos nossos servidores imediatamente.
-*   **Fora do Aplicativo (Solicitação via Web/E-mail):** Caso não tenha mais acesso ao aplicativo, você pode solicitar a exclusão dos seus dados enviando um e-mail para **[yurialdegomes@gmail.com]** com o assunto "Exclusão de Dados". Processaremos sua solicitação em até 30 dias.
-
-Ao excluir sua conta, todos os dados de transações, categorias, metas e informações de login serão permanentemente removidos de nossos bancos de dados ativos.
+### 6.2. Acesso e Portabilidade
+Você pode solicitar uma cópia dos seus dados (por exemplo, transações e categorias). Para isso, envie um e-mail para **yurialdegomes@gmail.com** com o assunto "Solicitação de Dados". Forneceremos os dados em formato comum (CSV/OFX) quando possível.
 
 ## 7. Privacidade Infantil
 
-Nosso Serviço não se destina a menores de 13 anos. Não coletamos intencionalmente informações de identificação pessoal de crianças. Se você é um pai ou responsável e sabe que seu filho nos forneceu dados pessoais, entre em contato conosco. Se tomarmos conhecimento de que coletamos dados de crianças sem verificação do consentimento dos pais, tomamos medidas para remover essas informações de nossos servidores.
+Nosso serviço não se destina a menores de 13 anos. Não coletamos intencionalmente informações de identificação pessoal de crianças. Pais ou responsáveis que suspeitem que seus filhos forneceram dados pessoais podem nos contatar para solicitar a remoção.
 
-## 8. Seus Direitos (LGPD e Outras Regulações)
+## 8. Divulgação Destacada e Consentimento na App
+
+Conforme exigido pelo Google Play, implementamos divulgações destacadas e solicitações de consentimento para o acesso a dados confidenciais. Antes de solicitar a permissão de Acesso às Notificações ou qualquer outra permissão sensível, a app exibirá uma tela explicativa clara, dentro da própria app, descrevendo:
+* Os tipos de dados a serem acessados;
+* O motivo (funcionalidade essencial);
+* Como os dados serão processados e armazenados;
+* Qual ação do usuário constitui consentimento (por exemplo, tocar em "Ativar").
+
+O consentimento do usuário será requerido antes de iniciar qualquer coleta ou processamento em segundo plano.
+
+## 9. Requisitos Específicos (Google Play / Autorizações)
+
+* **Dados financeiros:** Processamos dados financeiros para a funcionalidade principal do app. Esses dados não são divulgados publicamente e só são usados para fins funcionais (registro, relatórios, categorização).
+* **Acesso a notificações:** A permissão é solicitada somente para a funcionalidade de automação financeira; o uso é descrito de forma proeminente na app e exige consentimento explícito.
+* **Querying apps instaladas / visibilidade de pacotes:** Se o app precisar identificar apps bancárias específicas, será usada uma lista segmentada de pacotes conhecida; não usaremos visibilidade ampla sem justificação e sem declaração na Play Console.
+
+Se algum recurso do app requerer autorizações restritas adicionais (por exemplo, `QUERY_ALL_PACKAGES`, `AccessibilityService`), serão fornecidas justificativas detalhadas e formulários de declaração na Play Console conforme necessário.
+
+## 10. Seus Direitos (LGPD, GDPR e outras regulações)
 
 Você tem o direito de:
-*   Acessar os dados que temos sobre você;
-*   Solicitar a correção de dados incorretos;
-*   Revogar seu consentimento a qualquer momento (ex: desativando a leitura de notificações nas configurações do Android).
+* Acessar os dados que temos sobre você;
+* Solicitar a correção de dados incorretos;
+* Solicitar a exclusão da sua conta;
+* Revogar o consentimento dado a qualquer momento (por exemplo, desativando a leitura de notificações nas configurações do Android);
+* Solicitar a portabilidade dos seus dados.
 
-## 9. Alterações Nesta Política de Privacidade
+## 11. Alterações Nesta Política de Privacidade
 
-Podemos atualizar nossa Política de Privacidade periodicamente. Recomendamos que você revise esta página periodicamente para quaisquer alterações. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página.
+Podemos atualizar nossa Política de Privacidade periodicamente. Recomendamos que você revise esta página periodicamente para quaisquer alterações. Notificaremos você sobre alterações importantes publicando a nova Política de Privacidade nesta página e, quando aplicável, através de notificações no app.
 
-## 8. Contato
+## 12. Contato
 
-Se você tiver alguma dúvida ou sugestão sobre nossa Política de Privacidade, não hesite em nos contatar:
+Se você tiver alguma dúvida ou sugestão sobre nossa Política de Privacidade, entre em contato:
 
-*   **E-mail:** [yurialdegomes@gmail.com]
+* **E-mail:** yurialdegomes@gmail.com
+
+--
+
+**Observações e ações pendentes:**
+
+1. Confirme o **nome legal do desenvolvedor/empresa** que deve constar na Política (usei "Yuri Gomes" como suposição).
+2. Informe se o app envia dados para provedores de IA externos (nomes) para que eu possa listar explicitamente na política, caso aplicável.
+3. Confirme se deseja oferecer uma página de exportação automática em `Configurações > Exportar` ou apenas suporte por e-mail; atualizarei a política conforme sua preferência.
